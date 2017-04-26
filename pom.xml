@@ -15,7 +15,8 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-   <distributionManagement>
+   
+  <distributionManagement>
   <repository>
   <id>deployment1</id>
   <name>Internal Releases</name>
@@ -27,5 +28,19 @@
 <name>Internal Releases</name>
 <url>http://192.168.3.54:8081/repository/well-hosted-snap/</url>
 </snapshotRepository>
+    
+     <repository>
+  <id>wells</id>
+  <name>Internal Releases</name>
+  <url>http://192.168.2.192:8081/repository/wells-hosted-rel/</url>
+  </repository>
+ 
+  <snapshotRepository>
+<id>wells</id>
+<name>Internal Releases</name>
+<url>http://192.168.2.192:8081/repository/wells-hosted-snap/</url>
+</snapshotRepository>
 </distributionManagement>
+  
+  
 </project>
